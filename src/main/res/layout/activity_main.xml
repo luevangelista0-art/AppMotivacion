@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        android:background="#620A0F"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_all_inclusive_24"
+        android:tint="#FFFFFF"
+        android:layout_marginLeft="40dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_add_reaction_24"
+        android:tint="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_light_mode_24"
+        android:tint="#FFFFFF"
+        android:layout_marginStart="300dp"/>
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:text="Olá, Luísa!"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@id/text_view_name"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Riscos devem ser corridos, porque o maior perigo é não arriscar nada."
+        android:textSize="19dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="1dp"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="5dp"
+        android:background="#620A0F"
+        android:layout_below="@id/text_view_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nova frase"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#620A0F"
+        app:cornerRadius="1dp"/>
+
+
+
+</RelativeLayout>
