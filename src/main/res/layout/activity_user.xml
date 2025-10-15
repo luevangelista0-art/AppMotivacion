@@ -21,6 +21,7 @@
         android:textColor="#FFFFFF"/>
 
     <EditText
+        android:id="@+id/edit_text_nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -33,9 +34,10 @@
         android:textColor="#FFFFFF"/>
 
     <Button
+        android:id="@+id/button_salvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nova frase"
+        android:text="Salvar"
         android:textColor="#620A0F"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
