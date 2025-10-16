@@ -28,6 +28,7 @@ class UserActivity : AppCompatActivity() {
             if(nomeText.isEmpty()){
             Toast.makeText(this,"Digite o seu nome",Toast.LENGTH_LONG).show()
         }else{
+            this.getSharedPreferences("Motivacao", MODE_PRIVATE).edit().putString("nome", nomeText.toString()).apply()
             var intent = Intent(this,MainActivity::class.java)
                 startActivity(intent)
             }

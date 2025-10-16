@@ -1,6 +1,7 @@
 package com.example.appmotivacion
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        var nome = findViewById<TextView>(R.id.text_view_name)
+        var nomeRecuperacao = this.getSharedPreferences("Motivacao", MODE_PRIVATE).getString("nome","Olá Kotlin!")
+        nome.text = nomeRecuperacao
     }
 }
